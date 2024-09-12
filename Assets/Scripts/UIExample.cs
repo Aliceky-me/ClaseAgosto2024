@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class UIExample : MonoBehaviour
 {
     public TMP_Text scoreText;
+    public Sprite eventSprite;
 
     void Update()
     {
@@ -21,6 +22,16 @@ public class UIExample : MonoBehaviour
     public void OnClick_RemovePoints()
     {
         PointsManager.instance.RemovePoints(10);
+    }
+
+    public void OnClick_NoLlegoElProfeEvent(){
+        object[] parameters = new object[3];
+        parameters[0] = "motores de juegos 2";
+        parameters[1] = Color.red;
+        parameters[2] = eventSprite;
+        EventManager.m_Instance.InvokeEvent<NoLlegoElProfeEvent>(new NoLlegoElProfeEvent(parameters));
+        EventManager.m_Instance.InvokeEvent<HayExamenEvent>(new HayExamenEvent());
+
     }
 }
  
