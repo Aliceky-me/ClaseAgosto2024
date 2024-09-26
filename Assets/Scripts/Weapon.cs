@@ -15,7 +15,7 @@ public class Weapon : MonoBehaviour
             //newBullet.transform.position = spawnPoint.position;
             //newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * 100.0f);
             GameObject newBullet = null;
-            PoolManager.Instance.SpawnObject<GameObject>(out newBullet, bulletPrefab, spawnPoint);
+            //PoolManager.Instance.SpawnObject<GameObject>(out newBullet, bulletPrefab, spawnPoint);
         }
         
     }
