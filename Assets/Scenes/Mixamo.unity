@@ -392,14 +392,25 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993509249}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: d8495bf474cf840e1a931819069869e6, type: 3}
   m_Controller: {fileID: 9100000, guid: 6184fbc1d9fe74a21aebf8534765c6b1, type: 2}
   m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+    'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+    'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+    'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+    'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'UnityIdle'\n\tFrom
+    animation clip 'UnityFast Run'\n\tFrom animation clip 'UnityWalking'\n\tFrom
+    animation clip 'UnityWalking'\n\tFrom animation clip 'UnityFast Run'\n\tFrom
+    animation clip 'UnityIdle'\n\tFrom animation clip 'UnityWalking'\n\tFrom animation
+    clip 'UnityFast Run'\n\tFrom animation clip 'UnityRight Strafe Walk'\n\tFrom
+    animation clip 'UnityRight Strafe'\n\tand more ..."
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -431,17 +442,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d8495bf474cf840e1a931819069869e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 897.90314
+      value: 674.1062
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d8495bf474cf840e1a931819069869e6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 530.4095
+      value: 345.22394
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d8495bf474cf840e1a931819069869e6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 232.30463
+      value: -9.80777
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d8495bf474cf840e1a931819069869e6,
         type: 3}
