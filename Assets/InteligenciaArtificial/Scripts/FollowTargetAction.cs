@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class FollowTargetAction : AIAction
 {
-    public abstract void PerformAction()
+
+    public float speed = 1.0f;
+    public override void PerformAction()
     {
         if(_brain.Target != null){
             float step = speed * Time.deltaTime;

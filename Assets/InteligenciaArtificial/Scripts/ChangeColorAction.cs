@@ -7,9 +7,7 @@ public class ChangeColorAction : AIAction
     public override void PerformAction(){ }
     public Color alertColor;
     private Color originalColor;
-
-    private 
-
+    
     public override void OnEnterState()
     {
         base.OnEnterState();
