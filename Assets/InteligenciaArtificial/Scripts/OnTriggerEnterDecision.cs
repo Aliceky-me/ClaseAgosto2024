@@ -21,12 +21,11 @@ public class OnTriggerEnterDecision : AIDecision
         if (other.gameObject.tag == "Player")
         {
             hasPlayerEnter = true;
-
             _brain.Target = other.transform;
         }
     }
 
-    private void OnTriggerExit()
+    public override void OnExitState()
     {
         base.OnExitState();
         hasPlayerEnter = false;

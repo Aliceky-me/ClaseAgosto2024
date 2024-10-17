@@ -11,7 +11,10 @@ public class FollowTargetAction : AIAction
         if(_brain.Target != null){
             float step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, _brain.Target.position, step);
+            transform.LookAt(_brain.Target.position);
         }
+
+        
     }
 
 }
