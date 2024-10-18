@@ -19,4 +19,10 @@ public class OnTriggerExitDecision : AIDecision
             _brain.Target = null; 
         }
     }
+
+    public override void OnEnterState()
+    {
+        base.OnEnterState();
+        hasPlayerExit = false;
+    }
 }

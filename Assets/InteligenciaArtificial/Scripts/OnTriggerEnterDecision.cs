@@ -22,6 +22,16 @@ public class OnTriggerEnterDecision : AIDecision
         {
             hasPlayerEnter = true;
             _brain.Target = other.transform;
+
+            if (TryGetComponent<ReturnOriginAction>(out ReturnOriginAction returnOriginComponent))
+            {
+                returnOriginComponent.originPos = transform.position;
+            }
+
+            if (TryGetComponent<DistanceDecision>(out DistanceDecision distanceDecisionComponent))
+            {
+                distanceDecisionComponent.originPos = transform.position;
+            }
         }
     }
 
