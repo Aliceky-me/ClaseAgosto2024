@@ -349,6 +349,9 @@ MonoBehaviour:
     - Decision: {fileID: 787991575}
       TrueState: FollowTarget
       FalseState: 
+    - Decision: {fileID: 787991569}
+      TrueState: FollowTarget
+      FalseState: 
   - StateName: FollowTarget
     Actions:
     - {fileID: 787991574}
