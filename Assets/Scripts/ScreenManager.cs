@@ -21,12 +21,25 @@ public class ScreenManager : MonoBehaviour
         }
     }
 
+    public PopUpScreen popUpScreen; 
     public List<Screen> screens;
 
     public void OpenScreen(string _screenName){
         //Paso 1. Cerrar todas las pantallas
-        
+        for(int i = 0; i < screens.Count; i++){
+            screens[i].screen.SetActive(false);
 
         //Paso 2. Prender la pantalla del nombre
+        if(screens[i].screenName == _screenName){
+            screens[i].screen.SetActive(true);
+        }
+        }
+    }
+
+    public void OpenPopUp(string _title, string _description){
+        popUpScreen.titleText.text = _title;
+        popUpScreen.descriptionText.text = _description;
+
+        popUpScreen.gameObject.SetActive(true);
     }
 }
