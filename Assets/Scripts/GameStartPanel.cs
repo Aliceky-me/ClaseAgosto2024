@@ -9,6 +9,6 @@ public class GameStartPanel : MonoBehaviour
     }
 
     public void OpenAlert(){
-        ScreenManager.instance.OpenPopUp
+        ScreenManager.instance.OpenPopUp("fjgfndjhgfhfgh", "fdkjgjdfgfdhkgfjkhdfjkghdskjhgjkfhgkjdfg");
     }
 }
